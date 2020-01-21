@@ -435,3 +435,32 @@ app/controllers/just_another_controller.rb
 
 
 * restart rails server!!!
+
+
+*Add      factory_bot_rails   -- to Gemfile in test:
+
+
+*Add  factories.rb into spec folder and put in :::
+
+FactoryBot.define do
+factory(:task) do
+name {'Knit the sock monkey'}
+end
+end
+
+*Add    gem 'simplecov', require: false  to Gemfile
+
+  * Bundle install!
+
+  *Add
+
+  require 'simplecov'
+
+  SimpleCov.start
+
+                 to spec/spec_helper
+
+
+*change  config/environments/test.rb to....
+
+          config.eager_load = true

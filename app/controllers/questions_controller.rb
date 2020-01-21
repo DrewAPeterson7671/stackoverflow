@@ -2,6 +2,7 @@ class QuestionsController < ApplicationController
 
   def index
     @questions = Question.all
+    @most_recent = Question.three_most_recent
     render :index
   end
 
