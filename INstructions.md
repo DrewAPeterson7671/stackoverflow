@@ -432,3 +432,6 @@ app/controllers/just_another_controller.rb
       end
 
     end
+
+
+* restart rails server!!!
