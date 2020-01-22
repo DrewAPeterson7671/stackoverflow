@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   before_action :authorize, only: [:create, :edit, :update, :destroy]
-
+  
   def index
     @questions = Question.all
     @most_recent = Question.three_most_recent
